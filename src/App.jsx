@@ -90,15 +90,71 @@ function App() {
         </div>
       </section>
 
-      {/* AÇÕES NA COMUNIDADE (RESERVADO PARA NOTA 2) */}
+      {/* RELATÓRIO OFICIAL (NOTA 2) */}
       <section id="acoes" className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="bg-blue-900 text-white p-10 rounded-3xl shadow-2xl text-center">
-          <h3 className="text-3xl font-bold mb-4">Impacto Real (Ações do Projeto)</h3>
-          <p className="text-lg mb-6 text-blue-200">
-            Nesta seção, documentaremos nossas futuras intervenções práticas. Nas próximas semanas, o CiberSênior irá a campo para realizar as duas ações exigidas, e todos os registros (fotos, metodologias e relatórios) estarão disponíveis aqui.
-          </p>
-          <div className="inline-block bg-blue-800 px-6 py-3 rounded-lg font-mono text-sm border border-blue-700">
-            Status: Aguardando execução das ações práticas na comunidade.
+        <div className="bg-white p-10 rounded-3xl shadow-xl border-t-8 border-blue-900">
+          <div className="text-center mb-10">
+            <h3 className="text-3xl font-bold text-blue-900 mb-4">Relatório Oficial de Ações</h3>
+            <p className="text-gray-600 text-lg">Documentação da nossa extensão universitária no IFCE - Campus Iguatu.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10 text-gray-700">
+            {/* Coluna 1: Contexto e Metodologia */}
+            <div className="space-y-8">
+              <div>
+                <h4 className="text-xl font-bold text-blue-800 border-b-2 border-green-400 pb-2 mb-3">1. O Contexto e a Demanda</h4>
+                <p className="leading-relaxed">
+                  Com o avanço da digitalização, a terceira idade tornou-se o alvo principal de cibercriminosos através de golpes de engenharia social, clonagem de WhatsApp e links maliciosos. Havia uma necessidade urgente de intervir no ambiente familiar para promover segurança cibernética de forma acolhedora.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-blue-800 border-b-2 border-green-400 pb-2 mb-3">2. Nossa Metodologia</h4>
+                <p className="leading-relaxed">
+                  Nossa execução foi fundamentada na "Educação entre Pares". Criamos este portal e realizamos um minicurso prático focado no público jovem. O objetivo foi transformar a juventude em multiplicadores de conhecimento, capacitando-os para blindar os dispositivos de seus pais e avós.
+                </p>
+              </div>
+            </div>
+
+            {/* Coluna 2: Resultados e Metas */}
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-inner">
+              <h4 className="text-xl font-bold text-blue-800 border-b-2 border-green-400 pb-2 mb-4">3. Resultados Alcançados</h4>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <div>
+                    <strong className="block text-gray-900">Base de Conhecimento Digital</strong>
+                    <span className="text-sm">Desenvolvimento e publicação do portal CiberSênior com 0 custos financeiros.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <div>
+                    <strong className="block text-gray-900">Formação de Multiplicadores</strong>
+                    <span className="text-sm">Jovens da comunidade capacitados presencialmente para identificar golpes.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <div>
+                    <strong className="block text-gray-900">Conscientização na Prática</strong>
+                    <span className="text-sm">Idosos do núcleo familiar instruídos e com seus aplicativos protegidos via 2FA.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Botão de Download */}
+          <div className="mt-12 text-center border-t border-gray-200 pt-10">
+            <p className="text-gray-500 mb-6">Para visualizar o detalhamento completo, orçamento e registros fotográficos da equipe (Thierry, Iago, Ronald e Enzio), acesse o documento oficial:</p>
+            <a 
+              href="/relatorio-cibersenior.pdf" 
+              download="Relatorio_CiberSenior_Final.pdf"
+              className="inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition transform hover:scale-105 w-full md:w-auto"
+            >
+              <BookOpen size={24} />
+              Baixar Relatório Completo (PDF)
+            </a>
           </div>
         </div>
       </section>
